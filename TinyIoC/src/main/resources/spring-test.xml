@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="phone" class="com.loikun.bean.Phone">
+        <property name="brand" value="honor"/>
+        <property name="price" value="3999.99"/>
+    </bean>
+
+    <bean id="user" class="com.loikun.bean.User">
+        <property name="username" value="小明"/>
+        <property name="age" value="18"/>
+        <property name="phone" ref="phone"/>
+    </bean>
+</beans>
